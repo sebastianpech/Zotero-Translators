@@ -1,8 +1,8 @@
 {
 "translatorID":"77f998b6-eecd-432f-b7eb-9eaf23cf5960",
 "translatorType":2,
-"label":"Roam My Metadata Export",
-"creator":"Sebastian Pech",
+"label":"Roam Metadata Export",
+"creator":"Sebastian Pech (based on Lukas Kawerau)",
 "target":"md",
 "minVersion":"2.0",
 "maxVersion":"",
@@ -78,11 +78,11 @@ function doExport() {
     Zotero.write('  Zotero link:: ')
     Zotero.write('[Zotero Link](' + itemLink + ')\n')
 
-    Zotero.write('  topics:: \n')
+    // Zotero.write('  topics:: \n')
     
-    Zotero.write('  reading status:: [[to read]]\n')
+    // Zotero.write('  reading status:: [[to read]]\n')
 
-    Zotero.write('  citation graph:: {{[[query]]: {and: [[quote]] [[citing]] [['+citationKey+']] {not: [[query]]}}}}\n')
+    // Zotero.write('  citation graph:: {{[[query]]: {and: [[quote]] [[citing]] [['+citationKey+']] {not: [[query]]}}}}\n')
     
 
   }
