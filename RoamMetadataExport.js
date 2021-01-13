@@ -25,7 +25,7 @@ function doExport() {
       creatorsS += " & " + item.creators[1].lastName;    
     }
 
-    var citationKey = "@"+(item.citationKey) ? item.citationKey : "(bib citkey missing)";
+    var citationKey = (item.citationKey) ? "@"+item.citationKey : "(bib citkey missing)";
     Zotero.write('[[' + citationKey + ']]\n');
 
     Zotero.write('  author:: ');
