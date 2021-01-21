@@ -27,6 +27,9 @@ function doExport() {
     }
   }
 
+  var citationKey = (item.citationKey) ? "@"+item.citationKey : "(bib citkey missing)";
+    Zotero.write('[[' + citationKey + ']]\n');
+
   if (item.creators.length > 0) {
     Zotero.write('  author:: ');
     for (author in item.creators) {
@@ -82,7 +85,7 @@ function doExport() {
 
     // Zotero.write('  topics:: \n')
     
-    // Zotero.write('  reading status:: [[to read]]\n')
+    Zotero.write('  tags:: #view-later\n')
 
     // Zotero.write('  citation graph:: {{[[query]]: {and: [[quote]] [[citing]] [['+citationKey+']] {not: [[query]]}}}}\n')
     
